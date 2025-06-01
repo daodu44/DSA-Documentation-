@@ -20,3 +20,14 @@ The primary source if Data used is result.csv
        1. Data Manipulation
        2. Data Munching
 - SQL Server (for Querrying and Analysis)
+- Microsoft Power BI (for creating report)
+- Ms Power Point (for presentation)
+
+## Data Cleaning and Preparation 
+In the initial phase of the Data cleaning and preparations, we perform the following action; 
+1. Data loading and inspection
+2. handling missing variable Data
+3. Cleaning and formatting
+
+### Exploratory Data Analysis 
+EDA involved the ezplo
