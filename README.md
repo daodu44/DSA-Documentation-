@@ -136,3 +136,28 @@ The project involved a deep-dive analysis of product and customer review data fr
 │   ├── top_products_chart.png
 │   └── category_analysis.png
 
+
+---
+
+## 🚀 How to Explore the Project
+
+1. **Excel Users**: Open `excel_analysis/product_pivot_summary.xlsx` to view the pivot tables and discount bucket analysis.
+2. **Power BI Users**: Open `powerbi_dashboard/ProductInsights.pbix` in Power BI Desktop to interact with the dashboard.
+3. **Notebooks & Scripts**: This project focused on low-code tools, but scripts can be added later for automation.
+
+---
+
+## 🙋🏽‍♀️ About Me
+
+Hi, I’m **Modupe Daodu** – a data analyst who’s passionate about using numbers to tell real stories. I love transforming messy data into meaningful visuals and making insights *make sense*. 📊✨
+
+- 💼 Role: Junior Data Analyst
+- 📍 Based in Lagos, Nigeria
+- 💌 Let’s connect: [https://www.linkedin.com/in/modupe-daodu-831075207/](#) | [daodu44@gmail.com](#)
+
+---
+
+## ⭐ Feedback or Collaboration?
+
+Wanna give feedback? Have a similar project in mind? Let’s build together!
+
