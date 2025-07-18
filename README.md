@@ -1,4 +1,4 @@
-# DSA-Documentation-
+# DSA-DOCUMENTATION
 # 🛒 Product & Customer Review Analysis – Excel + Power BI
 
 Welcome! This is a data analytics project where I explore product performance and customer sentiment using **Excel** and **Power BI**. The goal? To uncover **actionable insights** from e-commerce product and review data that can guide **product improvement**, **marketing strategies**, and **customer engagement**.
