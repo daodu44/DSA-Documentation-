@@ -1,81 +1,138 @@
 # DSA-Documentation-
-This is where I started my portfolio building while taking my Data Analysis class with the Incubator 
+# 🛒 Product & Customer Review Analysis – Excel + Power BI
 
-This is where I started my portfolio building while taking my Data Analysis class
+Welcome! This is a data analytics project where I explore product performance and customer sentiment using **Excel** and **Power BI**. The goal? To uncover **actionable insights** from e-commerce product and review data that can guide **product improvement**, **marketing strategies**, and **customer engagement**.
 
-I have learnt quite a number of things ranging from Ms Excel to SQL and now to my Portfolio Building 
+---
 
-## Project Topic: AMAZON PRODUCT REVIEW ANALYSIS
+## 📂 Project Context
 
-### Project Overview 
-As a Junior Data Analyst at RetailTech Insights, I contributed to a data-driven initiative focused on analyzing product and customer review data from major e-commerce platforms like Amazon. The analysis involved cleaning and transforming raw datasets, conducting sentiment analysis, generating performance metrics (e.g., review count by category, average rating, discount impact), and building dashboards for easy stakeholder interpretation.
+As a **Junior Data Analyst** at **RetailTech Insights**, I was tasked with analyzing real-world e-commerce data (similar to Amazon) to:
+- Understand customer feedback trends.
+- Evaluate product performance across categories.
+- Explore how discounts affect customer satisfaction.
+- Build an **interactive dashboard** for easy decision-making.
 
-### Data Source
-The primary source if Data used is palmoriagroupemp-data.csv 
+---
 
-### Tools Used
-- Ms Excel for Data Cleaning [Download here](http://www.microsoft.com)
-     - For Data Collection 
-     - For Data Cleaning
-       1. Data Manipulation
-       2. Data Munching
-- Microsoft Power BI (for creating report)
+## 🧠 Tools Used
 
-## Data Cleaning and Preparation 
-In the initial phase of the Data cleaning and preparations, we perform the following action; 
-1. Data loading and inspection
-2. handling missing variable Data
-3. Cleaning and formatting
+| Tool         | Purpose                         |
+|--------------|----------------------------------|
+| **Excel**    | Data cleaning, Pivot Tables, EDA |
+| **Power BI** | Interactive dashboard + Visuals  |
 
-### Exploratory Data Analysis 
-he goal of the EDA was to understand the structure, quality, and trends in the product and customer review data before diving into deeper analytics. Here’s a breakdown of the key steps taken:
+---
 
-## 1. 🔍 Data Understanding
-Datasets used:
+## 📊 Exploratory Data Analysis (EDA)
 
-products.csv – product ID, name, category, price, discount, etc.
-reviews.csv – review ID, product ID, rating, review text, sentiment, etc.
-Initial Checks:
-Verified row count and column data types.
-Explored null values and inconsistencies (e.g., missing ratings or duplicate reviews).
+### ✅ Steps Taken:
+- Cleaned and structured data using Excel.
+- Created Pivot Tables to analyze:
+  - Total number of reviews per product category.
+  - Number of products listed per category.
+  - Average rating per category.
+  - Review sentiment trends and discount impact.
+- Grouped discounts into buckets for easy comparison.
+- Built a Power BI dashboard to visualize key insights interactively.
 
-## 2. 🧼 Data Cleaning
-Removed duplicates and handled missing data using imputation or row deletion depending on severity.
+### 📈 Key Metrics:
+- Total Reviews by Category  
+- Average Ratings per Product  
+- Products with Highest Review Counts  
+- Discount Bucket Analysis  
+- Sentiment Distribution  
 
-Normalized text fields (e.g., product names, review texts) for uniformity.
-Converted data types (e.g., price and discount fields to numeric).
-Created derived fields like:
-discount_percent
-review_length
-sentiment_score (via TextBlob/VADER)
+---
 
-## 3. 📈 Univariate Analysis
-Ratings Distribution: Majority of ratings fell between 3–5 stars, with a long tail of lower ratings.
+## 🔍 Key Insights
 
-Category Frequency: Top-selling categories emerged (e.g., Electronics, Beauty, Home Decor).
-Price Analysis: Detected pricing clusters; some outliers were found and flagged.####
-Review Length: Most reviews were short; few long-form ones correlated with stronger sentiment.
+- 🏆 **Beauty and Electronics** categories had the highest average ratings (4.5+).
+- ⚠️ Some products with high discounts (>50%) received **lower ratings**, indicating a trade-off between affordability and quality.
+- 🔥 A small number of products generated the **most reviews**—ideal for marketing or testimonials.
+- 🧠 **Longer reviews** often showed stronger emotional tone—either very positive or very negative.
+- 🛍️ Some categories (e.g. Home & Kitchen) had **high review volume** but average ratings, hinting at quality variation within the category.
 
-## 4. 📊 Bivariate/Multivariate Analysis
-Rating vs. Review Sentiment: High correlation between sentiment polarity and star ratings.
+---
 
-Discount vs. Rating: Heavily discounted items tended to receive slightly lower ratings.
-Category vs. Average Rating: Some categories consistently outperformed others in terms of customer satisfaction.
-Price vs. Rating: No strong direct correlation—suggesting value perception may be subjective or driven by brand.
+## 📊 Power BI Dashboard Highlights
 
-## 5. 📌 Key Visualizations
-Histograms of Ratings, Prices, and Discounts
+![Dashboard Preview](visuals/dashboard_preview.png)
 
-Bar charts of Review Count per Category
-Word Clouds for positive vs. negative reviews
-Scatter plots for Discount % vs. Rating
-Heatmaps for correlation matrix of numeric features
+Features:
+- Dynamic filtering by Category, Rating, Discount Bucket.
+- Bar charts for top reviewed and top rated products.
+- Heatmaps for category performance.
+- Review count vs. rating correlation.
 
-## 6. 📥 Takeaways from EDA
-Customer sentiment is a powerful predictor of overall rating.
+---
 
-Some categories consistently underperform and could benefit from product redesign or better targeting.
-A small percentage of products generate a disproportionate number of reviews—potential brand ambassadors or areas for cross-selling.
-Discounts attract volume but might impact perception of quality.
+## 📁 File Structure
 
+
+## 📊 Exploratory Data Analysis (EDA)
+
+The project involved a deep-dive analysis of product and customer review data from an e-commerce platform (Amazon-like), using **Excel** and **Power BI** to extract insights and build a dynamic dashboard.
+
+### Data Source:
+- Cleaned and preprocessed product and review datasets provided in `.xlsx` format.
+- Fields included: product ID, name, category, price, discount %, number of reviews, rating, and review sentiment (text).
+
+### EDA Steps (Excel + Power BI):
+- ✅ Checked for missing values and duplicates (cleaned in Excel).
+- ✅ Created pivot tables to:
+  - Count reviews per product category.
+  - Calculate average ratings by category.
+  - Analyze discount impact on product ratings.
+- ✅ Created new columns:
+  - Discount buckets (0–13%, 14–30%, etc.)
+  - Rating groupings
+- ✅ Built charts in Power BI:
+  - Review trends
+  - Category-wise performance
+  - Top-rated vs. most-reviewed products
+
+### Key Metrics Calculated:
+- Average rating per category
+- Total reviews per category
+- Number of products per category
+- % discount impact on product perception
+
+## 🔍 Key Insights & Visualizations
+
+### 📌 Insights:
+- **High-rated categories**: Beauty and Electronics consistently scored 4.5+ average ratings.
+- **Low-performing products**: Some items had 50+ reviews but low ratings (<3), suggesting major quality issues.
+- **Discount ≠ Satisfaction**: Heavily discounted products (over 50%) showed mixed ratings—some customers felt they got value, others flagged poor quality.
+- **Engagement Hotspots**: Few products had a *disproportionate number of reviews*, ideal for targeted campaigns or testimonials.
+- **Review Length = Emotion**: Longer reviews tended to reflect strong sentiments—either highly satisfied or frustrated users.
+
+### 📊 Visualizations:
+- **Excel**:
+  - Pivot table summary by category
+  - Discount bucket chart
+  - Category review heatmap
+- **Power BI Dashboard**:
+  - Interactive slicers (Category, Rating Bucket, Discount Range)
+  - Review sentiment overview
+  - Top 10 reviewed products (bar chart)
+  - Rating distribution histogram
+
+📁 product-review-analysis/
+│
+├── 📄 README.md
+├── 📁 data/
+│   ├── cleaned_reviews.xlsx
+│   └── product_data_raw.xlsx
+│
+├── 📁 excel_analysis/
+│   └── pivot_dashboard.xlsx
+│
+├── 📁 powerbi_dashboard/
+│   └── ProductInsights.pbix
+│
+├── 📁 visuals/
+│   ├── rating_distribution.png
+│   ├── top_products_chart.png
+│   └── category_analysis.png
 
